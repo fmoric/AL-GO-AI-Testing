@@ -4,23 +4,12 @@ pageextension 80550 "Customer Card Extension" extends "Customer Card"
     {
         addafter("Last Date Modified")
         {
-            field("Date Filter"; Rec."Date Filter")
-            {
-                ApplicationArea = All;
-                Caption = 'Date Filter';
-                ToolTip = 'Specify a date filter to calculate due amounts for a specific date range.';
-                
-                trigger OnValidate()
-                begin
-                    CurrPage.Update();
-                end;
-            }
             field("Due Amount"; Rec."Due Amount")
             {
                 ApplicationArea = All;
                 Caption = 'Due Amount';
                 ToolTip = 'Shows the total amount due for this customer based on the applied date filter.';
-                
+
                 trigger OnDrillDown()
                 begin
                     Rec.CalcFields("Due Amount");
@@ -56,7 +45,7 @@ pageextension 80550 "Customer Card Extension" extends "Customer Card"
         CustLedgerEntry.SetRange("Customer No.", Rec."No.");
         CustLedgerEntry.SetFilter("Due Date", Rec.GetFilter("Date Filter"));
         CustLedgerEntry.SetFilter("Remaining Amount", '<>0');
-        
+
         CustomerLedgerEntriesPage.SetTableView(CustLedgerEntry);
         CustomerLedgerEntriesPage.Run();
     end;
