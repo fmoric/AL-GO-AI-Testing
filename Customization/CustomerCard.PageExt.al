@@ -4,6 +4,17 @@ pageextension 80550 "Customer Card Extension" extends "Customer Card"
     {
         addafter("Last Date Modified")
         {
+            field("Date Filter"; Rec."Date Filter")
+            {
+                ApplicationArea = All;
+                Caption = 'Date Filter';
+                ToolTip = 'Specify a date filter to calculate due amounts for a specific date range.';
+                
+                trigger OnValidate()
+                begin
+                    CurrPage.Update();
+                end;
+            }
             field("Due Amount"; Rec."Due Amount")
             {
                 ApplicationArea = All;

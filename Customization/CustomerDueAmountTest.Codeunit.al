@@ -3,6 +3,9 @@ codeunit 80550 "Customer Due Amount Test"
     Subtype = Test;
     TestPermissions = Disabled;
 
+    var
+        Assert: Codeunit Assert;
+
     [Test]
     procedure TestDueAmountCalculation()
     var
