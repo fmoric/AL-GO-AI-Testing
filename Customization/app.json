@@ -1,31 +1,40 @@
 {
-  "id": "84e8b942-16d9-40ac-81bb-4d2e56a56bda",
-  "name": "Customization",
-  "publisher": "BE-terna",
-  "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
-  "dependencies": [],
-  "screenshots": [],
-  "platform": "1.0.0.0",
-  "application": "22.0.0.0",
-  "idRanges": [
-    {
-      "from": 50000,
-      "to": 99999
-    }
-  ],
-  "features": [
-    "NoImplicitWith"
-  ],
-  "resourceExposurePolicy": {
-    "allowDebugging": true,
-    "allowDownloadingSource": false,
-    "includeSourceInSymbolFile": false
-  }
+    "id": "84e8b942-16d9-40ac-81bb-4d2e56a56bda",
+    "name": "Customization",
+    "publisher": "BE-terna",
+    "version": "26.0.0.0",
+    "brief": "Customization",
+    "description": "Customization",
+    "privacyStatement": "https://www.be-terna.com/legal",
+    "EULA": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/641/Service-Agreement",
+    "help": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/",
+    "url": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/642/Support-Link",
+    "logo": "./logo/BE.logo.216x216.png",
+    "dependencies": [
+    ],
+    "screenshots": [
+    ],
+    "platform": "1.0.0.0",
+    "application": "26.0.0.0",
+    "idRanges": [
+        {
+            "from": 80550,
+            "to": 80559
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "contextSensitiveHelpUrl": "https://docs.microsoft.com/dynamics365/business-central/",
+    "runtime": "15.0",
+    "features": [
+        "NoImplicitWith",
+        "TranslationFile"
+    ],
+    "preprocessorSymbols": [
+        "DBG"
+    ],
+    "applicationInsightsConnectionString": "InstrumentationKey=98f28ed6-02b2-48f2-a974-87d8e08d6417;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/"
 }
