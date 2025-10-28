@@ -1,0 +1,36 @@
+{
+    "id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "name": "LicenseManager",
+    "publisher": "BE-terna",
+    "version": "1.0.0.0",
+    "brief": "Comprehensive Licensing Management System",
+    "description": "A full-featured licensing management system for Business Central solutions with secure RSA-2048 signed license generation, centralized application management, and date-based access control.",
+    "privacyStatement": "https://www.be-terna.com/legal",
+    "EULA": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/641/Service-Agreement",
+    "help": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/",
+    "url": "https://dev.azure.com/AD-NAV/ADL-Public/_wiki/wikis/BC%20Documentation/642/Support-Link",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "27.0.0.0",
+    "idRanges": [
+        {
+            "from": 80570,
+            "to": 80599
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "contextSensitiveHelpUrl": "https://docs.microsoft.com/dynamics365/business-central/",
+    "runtime": "15.0",
+    "features": [
+        "NoImplicitWith",
+        "TranslationFile"
+    ],
+    "preprocessorSymbols": [
+        "DBG"
+    ]
+}
