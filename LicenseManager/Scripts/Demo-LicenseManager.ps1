@@ -105,8 +105,8 @@ Write-Host "==========================================" -ForegroundColor Cyan
 
 Write-Host "`nGenerated Files:" -ForegroundColor Yellow
 Write-Host "  Keys:" -ForegroundColor White
-Write-Host "    - $scriptDir\Keys\LicenseKey.private.xml (KEEP SECURE)" -ForegroundColor White
-Write-Host "    - $scriptDir\Keys\LicenseKey.public.xml" -ForegroundColor White
+Write-Host "    - Private key stored securely (never share)" -ForegroundColor White
+Write-Host "    - Public key for distribution" -ForegroundColor White
 Write-Host "`n  Licenses:" -ForegroundColor White
 Write-Host "    - $scriptDir\Licenses\DEMO-STD-001.txt" -ForegroundColor White
 Write-Host "    - $scriptDir\Licenses\DEMO-STD-001.signed.txt" -ForegroundColor White

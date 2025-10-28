@@ -70,6 +70,12 @@ Located in the `Scripts` folder:
 - PowerShell 5.1 or higher
 - AL-GO for GitHub development environment (optional)
 
+> **IMPORTANT SECURITY NOTES:**
+> - **Never commit RSA keys to source control** - Generate unique keys for each environment
+> - Keys in this repository (if any) are for demonstration only and must be regenerated for production
+> - Use the provided .gitignore to prevent accidental key commits
+> - Store production private keys in secure key vaults or HSM systems
+
 ### Installation
 
 1. Deploy the LicenseManager app to your Business Central environment

@@ -48,7 +48,7 @@ try {
     $privateKeyXml = $rsa.ToXmlString($true)
     $privateKeyPath = Join-Path $KeyPath "$KeyName.private.xml"
     $privateKeyXml | Out-File -FilePath $privateKeyPath -Encoding UTF8
-    Write-Host "Private key saved to: $privateKeyPath" -ForegroundColor Green
+    Write-Host "Private key saved successfully (location not displayed for security)" -ForegroundColor Green
     
     # Export public key (includes only public parameters)
     $publicKeyXml = $rsa.ToXmlString($false)
@@ -59,8 +59,9 @@ try {
     # Display key information
     Write-Host "`nKey Information:" -ForegroundColor Yellow
     Write-Host "  Key Size: 2048 bits" -ForegroundColor White
-    Write-Host "  Private Key: $privateKeyPath" -ForegroundColor White
-    Write-Host "  Public Key: $publicKeyPath" -ForegroundColor White
+    Write-Host "  Key Directory: $KeyPath" -ForegroundColor White
+    Write-Host "  Private Key: Protected (not displayed for security)" -ForegroundColor White
+    Write-Host "  Public Key: $KeyName.public.xml" -ForegroundColor White
     
     Write-Host "`nSecurity Notice:" -ForegroundColor Red
     Write-Host "  - Keep the private key secure and confidential" -ForegroundColor White
