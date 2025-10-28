@@ -19,3 +19,9 @@ rad.json
 .snapshots/
 cache_*
 ~$*
+
+# License Manager - Security sensitive files
+LicenseManager/Scripts/Keys/*.xml
+LicenseManager/Scripts/Keys/private/
+LicenseManager/Scripts/Licenses/*.signed.txt
+LicenseManager/Scripts/Licenses/*.txt
