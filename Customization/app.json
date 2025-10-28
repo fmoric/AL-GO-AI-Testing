@@ -2,7 +2,7 @@
     "id": "84e8b942-16d9-40ac-81bb-4d2e56a56bda",
     "name": "Customization",
     "publisher": "BE-terna",
-    "version": "26.0.0.0",
+    "version": "27.0.0.0",
     "brief": "Customization",
     "description": "Customization",
     "privacyStatement": "https://www.be-terna.com/legal",
@@ -15,7 +15,7 @@
     "screenshots": [
     ],
     "platform": "1.0.0.0",
-    "application": "26.0.0.0",
+    "application": "27.0.0.0",
     "idRanges": [
         {
             "from": 80550,

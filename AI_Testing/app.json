@@ -2,7 +2,7 @@
   "id": "e3a5f53c-2926-40cf-a66b-577384a5d8d5",
   "name": "AI_Testing",
   "publisher": "BE-terna",
-  "version": "1.0.0.0",
+  "version": "27.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -13,12 +13,12 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "27.0.0.0",
   "idRanges": [
-    {
-      "from": 50000,
-      "to": 99999
-    }
+        {
+            "from": 80560,
+            "to": 80570
+        }
   ],
   "features": [
     "NoImplicitWith"
